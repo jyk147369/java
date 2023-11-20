@@ -10,13 +10,11 @@ public class Ex04 {
         player01 = new Player();
         player01.name = "철수";
         player01.num = (int)(Math.random()*3)+1;
-        System.out.println(player01.num);
 
         Player player02;
         player02 = new Player();
         player02.name = "영희";
         player02.num = (int)(Math.random()*3)+1;
-        System.out.println(player02.num);
 
         // player01이 가위, 바위, 보 중 랜덤하게 하나를 선택
 
