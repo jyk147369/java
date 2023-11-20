@@ -42,12 +42,46 @@ public class Ex04 {
 
         if (player01.num == player02.num) {
             System.out.println("무승부");
-            while (player01.num==player02.num){
-            }
         } else if (player01.num == 1 && player02.num == 2 || player01.num == 2 && player02.num == 3 || player01.num == 3 && player02.num == 1) {
             System.out.println(player02.name+"가 이겼습니다.");
         } else {
             System.out.println(player01.name+"가 이겼습니다.");}
+
+        while(player01.num == player02.num) {
+            player01 = new Player();
+            player01.name = "철수";
+            player01.num = (int)(Math.random()*3)+1;
+
+            player02 = new Player();
+            player02.name = "영희";
+            player02.num = (int)(Math.random()*3)+1;
+
+            System.out.print(player01.name+"는 ");
+            if (player01.num==1) {
+                System.out.println("가위입니다.");
+            } else if (player01.num==2) {
+                System.out.println("바위입니다.");
+            } else {
+                System.out.println("보입니다.");}
+
+            // player02가 가위, 바위, 보 중 랜덤하게 하나를 선택
+
+            System.out.print(player02.name+"는 ");
+            if (player02.num==1) {
+                System.out.println("가위입니다.");
+            } else if (player02.num==2) {
+                System.out.println("바위입니다.");
+            } else {
+                System.out.println("보입니다.");}
+
+            if (player01.num == player02.num) {
+                System.out.println("무승부");
+            } else if (player01.num == 1 && player02.num == 2 || player01.num == 2 && player02.num == 3 || player01.num == 3 && player02.num == 1) {
+                System.out.println(player02.name+"가 이겼습니다.");
+            } else {
+                System.out.println(player01.name+"가 이겼습니다.");}
+
+        }
 
 
     }
