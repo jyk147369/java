@@ -40,10 +40,14 @@ public class Ex04 {
         // 1=가위 2=바위 3=보
         // 1,2면 2승, 2,3면 3승 1,3면 1승
 
-        while (player01.num == player02.num) {
+        if (player01.num == player02.num) {
             System.out.println("무승부");
-
-        }
+            while (player01.num==player02.num){
+            }
+        } else if (player01.num == 1 && player02.num == 2 || player01.num == 2 && player02.num == 3 || player01.num == 3 && player02.num == 1) {
+            System.out.println(player02+"가 이겼습니다.");
+        } else {
+            System.out.println(player01+"가 이겼습니다.");}
 
 
     }
