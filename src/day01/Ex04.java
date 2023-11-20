@@ -45,9 +45,9 @@ public class Ex04 {
             while (player01.num==player02.num){
             }
         } else if (player01.num == 1 && player02.num == 2 || player01.num == 2 && player02.num == 3 || player01.num == 3 && player02.num == 1) {
-            System.out.println(player02+"가 이겼습니다.");
+            System.out.println(player02.name+"가 이겼습니다.");
         } else {
-            System.out.println(player01+"가 이겼습니다.");}
+            System.out.println(player01.name+"가 이겼습니다.");}
 
 
     }
