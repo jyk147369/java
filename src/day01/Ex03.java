@@ -48,7 +48,7 @@ public class Ex03 {
          */
 
         for(Integer i=1; i < 10; i=i+2) {
-            for(Integer j=9; j > i; j=j-2) {
+            for(Integer j=10; j > i; j=j-2) {
                 System.out.print(" ");
             }
             for(Integer j=0; j < i; j=j+1) {
