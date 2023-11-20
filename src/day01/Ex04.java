@@ -10,14 +10,24 @@ public class Ex04 {
         String Player02 = "영희";
 
         // player01이 가위, 바위, 보 중 랜덤하게 하나를 선택
-        Integer num = (int)(Math.random()*3)+1;
-        if (num==1) {
+
+        System.out.print(Player01+"는 ");
+        Integer num1 = (int)(Math.random()*3)+1;
+        if (num1==1) {
             System.out.println("가위입니다.");
-        } else if (num==2) {
+        } else if (num1==2) {
             System.out.println("바위입니다.");
         } else {
-            System.out.println("보입니다.");
-    }
+            System.out.println("보입니다.");}
+
+        System.out.print(Player02+"는 ");
+        Integer num2 = (int)(Math.random()*3)+1;
+        if (num2==1) {
+            System.out.println("가위입니다.");
+        } else if (num2==2) {
+            System.out.println("바위입니다.");
+        } else {
+            System.out.println("보입니다.");}
 
     }
 
@@ -27,4 +37,3 @@ public class Ex04 {
 
 
     }
-}
