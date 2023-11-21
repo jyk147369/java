@@ -11,6 +11,6 @@ public class 입력받기 {
         System.out.println(inputStr);
         System.out.print("숫자 입력하세요: ");
         int inputNum =  sc.nextInt();
-        System.out.println( inputNum);
+        System.out.println(inputNum);
     }
 }
