@@ -19,14 +19,6 @@ public class Player {
         this.score = 0;
     }
 
-    // shell 고르기
-    void pickShell(){
-        Scanner sc = new Scanner(System.in);
-        Integer pick = 0;
-        pick = sc.nextInt();
-    }
-
-    // shell 잘 잡았을까?
 
 
     // 정답 잡았을때
