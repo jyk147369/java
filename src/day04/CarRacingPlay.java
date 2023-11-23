@@ -45,8 +45,22 @@ public class CarRacingPlay {
             }
         }
 
-        for (int i = 0; i < carNum; i++) {
+        for (int i=0; i < carNum; i++) {
             car[i].finalGoal();
+        }
+
+        Integer maxCarX=car[0].carX;
+        for (int i=0; i<carNum; i++){
+            if(car[0].carX<=car[i].carX){
+                maxCarX = car[i].carX;
+            }
+        }
+
+        System.out.print("최종 우승자 : ");
+        for(int i=0; i<carNum; i++) {
+            if (maxCarX == car[i].carX) {
+                System.out.print(car[i].carName+" ");
+            }
         }
 
     }
