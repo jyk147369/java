@@ -9,7 +9,8 @@ public class PocketmonGo {
                 1,
                 0,
                 "전기포켓몬",
-                0,0
+                0,
+                0
         );
 
         Pocketmon raichu = new Pocketmon(
@@ -19,7 +20,8 @@ public class PocketmonGo {
                 1,
                 0,
                 "전기포켓몬",
-                0,0
+                0,
+                0
         );
 
         Pocketmon charmander = new Pocketmon(
@@ -29,7 +31,8 @@ public class PocketmonGo {
                 1,
                 0,
                 "불포켓몬",
-                0,0
+                0,
+                0
         );
 
         Pocketmon squirtle = new Pocketmon(
@@ -39,7 +42,8 @@ public class PocketmonGo {
                 1,
                 0,
                 "물포켓몬",
-                0,0
+                0,
+                0
         );
 
         Pocketmon butterfree = new Pocketmon(
@@ -49,7 +53,8 @@ public class PocketmonGo {
                 1,
                 0,
                 "공중포켓몬",
-                0,0
+                0,
+                0
         );
 
         Pocketmon slowbro = new Pocketmon(
@@ -59,7 +64,8 @@ public class PocketmonGo {
                 1,
                 0,
                 "물포켓몬",
-                0,0
+                0,
+                0
         );
 
         Pocketmon pidgeot = new Pocketmon(
@@ -69,7 +75,8 @@ public class PocketmonGo {
                 1,
                 0,
                 "공중포켓몬",
-                0,0
+                0,
+                0
         );
 
         Pocketmon koffing = new Pocketmon(
@@ -79,12 +86,9 @@ public class PocketmonGo {
                 1,
                 0,
                 "독포켓몬",
-                0,0
+                0,
+                0
         );
-
-
-        pikachu.attackTo(koffing);
-        pikachu.moving(10,20);
 
     }
 }

@@ -1,6 +1,6 @@
 package day03;
 
-public abstract class Pocketmon {
+public class Pocketmon {
     String name;
     Integer atk;
     String type;
@@ -92,5 +92,4 @@ public abstract class Pocketmon {
         return exp;
     }
 
-    abstract void moving(Integer z);
 }
