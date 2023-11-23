@@ -1,5 +1,7 @@
 package day03;
 
+import java.util.Arrays;
+
 public class Champion {
     String name;
     Integer atk;
@@ -12,21 +14,42 @@ public class Champion {
     Integer y;
     String[] itemList;
 
+    @Override
+    public String toString() {
+        return "Champion{" +
+                "name='" + name + '\'' +
+                ", attackDamage=" + atk +
+                ", attackRange=" + range +
+                ", hp=" + hp +
+                ", defence=" + def +
+                ", level=" + lv +
+                ", exp=" + exp +
+                ", x=" + x +
+                ", y=" + y +
+                ", itemList=" + Arrays.toString(itemList) +
+                '}';
+    }
 
-    // 메소드 오버로딩
-    // 똑같은 이름의 메소드를 여러개 만드는 것. 단, 매개변수 수나 매개변수의 타입이 달라야 함
-    // 메소드를 사용하는 쪽에게 여러 사용 방법을 제공해주는 것
 
-    Champion(String name){
+    // Alt + Insert 키를 누르면 개발 도구를 통해 자동으로 여러 메소드 생성 가능
+    // Constructor가 생성자
+    // 변수를 선택해서 생성자를 만들면 객체를 생성하면서 실행하는 생성자를 통해
+    // 매개변수로 값을 전달 받고 전달받은 값으로 객체의 변수들을 초기화할 수 있다.
+    public Champion(String name, Integer attackDamage, Integer attackRange, Integer hp, Integer defence, Integer level, Integer exp, Integer x, Integer y, String[] itemList) {
         this.name = name;
-    }
-
-    Champion(Integer hp){
+        this.atk = attackDamage;
+        this.range = attackRange;
         this.hp = hp;
+        this.def = defence;
+        this.lv = level;
+        this.exp = exp;
+        this.x = x;
+        this.y = y;
+        this.itemList = itemList;
+        for (int i=0; i<this.itemList.length; i++) {
+            this.itemList[i] = "빈칸";
+        }
     }
-
-
-
 
     // 이동
     void move(Integer x, Integer y) {
@@ -68,6 +91,17 @@ public class Champion {
         }
         return hp;
     }
+
+    // 메소드 오버로딩
+    // 똑같은 이름의 메소드를 여러개 만드는 것. 단, 매개변수 수나 매개변수의 타입이 달라야 함
+    // 메소드를 사용하는 쪽에게 여러 사용 방법을 제공해주는 것
+    Champion(String name){
+        this.name = name;
+    }
+
+    Champion(Integer hp){
+         this.hp = hp;
+     }
 
     // attacked 메소드를 오버로딩을 이용해서
     // 숫자를 하나 더 전달 받는 메소드를 만든다
