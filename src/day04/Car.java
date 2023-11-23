@@ -3,7 +3,6 @@ package day04;
 import java.util.Scanner;
 
 public class Car {
-    Integer carNum;
     String carName;
     // 이동할 거리
     Integer carX;
@@ -11,8 +10,7 @@ public class Car {
     Integer randomNum;
     Integer movingNum;
 
-    public Car(Integer carNum, String carName, Integer carX) {
-        this.carNum = carNum;
+    public Car(String carName, Integer carX) {
         this.carName = carName;
         this.carX = 0;
     }
