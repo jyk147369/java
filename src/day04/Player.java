@@ -4,19 +4,19 @@ import java.util.Scanner;
 
 public class Player {
     // playerNum은 아이디같은거
-    Integer playerNum;
+    private Integer playerNum;
 
     // player 하트
-    Integer heart;
+    private Integer heart;
 
     // player 점수
-    static Integer score;
+    private static Integer score;
 
     //player 생성자
-    public Player(Integer playerNum, Integer heart, Integer score){
+    public Player(Integer playerNum){
         this.playerNum = playerNum;
-        this.heart = heart;
-        this.score = score;
+        this.heart = 5;
+        this.score = 0;
     }
 
     // shell 고르기
@@ -74,7 +74,16 @@ public class Player {
         return heart;
     }
 
+    // getter 단축키 : alt + insert
+    public Integer getPlayerNum() {
+        return playerNum;
+    }
 
+    public Integer getHeart() {
+        return heart;
+    }
 
-
+    public static Integer getScore() {
+        return score;
+    }
 }

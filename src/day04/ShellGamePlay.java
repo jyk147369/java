@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class ShellGamePlay {
     public static void main(String[] args) {
         Player[] player = new Player[2];
-        player[0] = new Player(1,5,0);
-        player[1] = new Player(2, 5,0);
+        player[0] = new Player(1);
+        player[1] = new Player(2);
 
         // 만약에 플레이어1의 하트 또는 플레이어2의 하트가 0보다 크면 계속 진행
-            while(player[0].heart>0 || player[1].heart>0) {
+            while(player[0].getHeart()>0 || player[1].getHeart()>0) {
                 for(int k=0; k<2; k++) {
-                    if (player[k].score >= 3) {
+                    if (player[k].getScore() >= 3) {
                         break;
                     } else {
                         // shell 3개 만든다
@@ -30,7 +30,8 @@ public class ShellGamePlay {
                         }
 
                         // player가 shell 고르기
-                        System.out.println("<Player" + player[k].playerNum +"님 차례>");
+                        // private 변수를 쉽게 getter로 바꾸는 단축키 : alt + s + Enter
+                        System.out.println("<Player" + player[k].getPlayerNum() +"님 차례>");
                         System.out.println("다음 숫자 중 하나를 고르시오.");
                         for (int i = 0; i < 3; i++) {
                             System.out.print(shell[i] + " ");
