@@ -4,7 +4,7 @@ public class Pocketmon {
     String name;
     Integer atk;
     String type;
-    Integer hp;
+    private Integer hp;
     Integer lv;
     Integer exp;
     Integer x;
@@ -90,6 +90,19 @@ public class Pocketmon {
         }
 
         return exp;
+    }
+
+    // getter
+    public int getHp(){
+        return this.hp;
+    }
+
+    // setter
+    public void setHp(int hp) {
+        if(hp>100) {
+            hp = hp % 100;
+        }
+        this.hp = hp;
     }
 
 }

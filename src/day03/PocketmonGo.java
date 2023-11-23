@@ -90,5 +90,11 @@ public class PocketmonGo {
                 0
         );
 
+        // System.out.println(pikachu.hp);
+        // 변수 hp에 private을 달아놨기때문에 에러남
+
+        System.out.println(pikachu.getHp());
+        // 따라서 hp 리턴하는 메소드 만들어서 출력
+
     }
 }

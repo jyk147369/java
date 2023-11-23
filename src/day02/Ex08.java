@@ -13,9 +13,6 @@ public class Ex08 {
 
         // 숫자 랜덤 뽑기
 
-        // 일단 숫자 6개 뽑기
-        // 중복 확인하려면 일단 나열해서 확인
-
         for (int i = 0; i < 6; i++) {
             num[i] = (int) (Math.random() * 6) + 1;
             // 중복 제거
