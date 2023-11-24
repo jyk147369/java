@@ -50,7 +50,7 @@ public class CarRacingPlay {
                 car[i].moving();
             }
 
-            System.out.println("["+(j+1)+"회차 결과]");
+            System.out.println("<"+(j+1)+"회차 결과>");
             for (int i = 0; i < carNum; i++) {
                 System.out.print(car[i].carName + " : ");
                 for (int k = 0; k < car[i].carX; k++) {
