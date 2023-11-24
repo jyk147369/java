@@ -47,6 +47,17 @@ public class CarRacingPlay {
             for (int i = 0; i < carNum; i++) {
                 car[i].moving();
             }
+
+            System.out.println("["+(j+1)+"회차 결과]");
+            for (int i = 0; i < carNum; i++) {
+                System.out.print(car[i].carName + " : ");
+                for (int k = 0; k < car[i].carX; k++) {
+                    System.out.print("-");
+                }
+                System.out.println();
+            }
+
+
         }
 
         for (int i=0; i < carNum; i++) {
@@ -65,7 +76,7 @@ public class CarRacingPlay {
         System.out.print("최종 우승자 : ");
         for(int i=0; i<carNum; i++) {
             if (maxCarX == car[i].carX) {
-                System.out.print(car[i].carName + " ");
+                System.out.print(car[i].carName + " ");     // 여러명일때 우승자 사이에 쉼표 어캄....
             }
         }
 
