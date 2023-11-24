@@ -15,16 +15,18 @@ public class CarRacingPlay {
         String[] carName = new String[carNum];
         Scanner sc2 = new Scanner(System.in);
 
+        System.out.println("경주할 자동차의 이름을 입력하세요 : ");
         for (int i = 0; i < carNum; i++) {
             // 문자열 입력
-            System.out.println("경주할 자동차의 이름을 입력하세요 : ");
             carName[i] = sc2.nextLine();
         }
 
         // 경주할 자동차 이름 출력
+        System.out.println("경주할 자동차의 이름은: ");
         for (int i = 0; i < carNum; i++) {
-            System.out.println("경주할 자동차의 이름은: " + carName[i] + "입니다.");
+            System.out.print(carName[i]+" ");
         }
+        System.out.println( "입니다.");
 
         // 경주할 자동차 생성자
         Car[] car = new Car[carNum];
@@ -41,7 +43,7 @@ public class CarRacingPlay {
         // 경주 횟수만큼 세트 반복
         for (int j=0; j<raceNum; j++) {
 
-            System.out.println("["+(j+1)+"회차]");
+            //System.out.println("["+(j+1)+"회차]");
 
             // 자동차 개수만큼 랜덤뽑기 반복
             for (int i = 0; i < carNum; i++) {
@@ -60,9 +62,9 @@ public class CarRacingPlay {
 
         }
 
-        for (int i=0; i < carNum; i++) {
-            car[i].finalGoal();
-        }
+        //for (int i=0; i < carNum; i++) {
+        //    car[i].finalGoal();
+        //}
 
         // 일단 배열 중 첫번째를 최대값 변수에 저장
         Integer maxCarX=car[0].carX;
